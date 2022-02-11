@@ -1,16 +1,117 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    <linkrel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+  />
+    
     <title>Hello, world!</title>
+
+
+
+    <style>
+
+body {
+  background-color: black;
+  color: white;
+}
+.navbar {
+  position: relative;
+  color: white;
+  justify-content: flex-start !important;
+  background-color: black;
+  height: 20px;
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.position {
+  position: absolute;
+  right: 140px;
+}
+.kids {
+  position: absolute;
+  right: 120px;
+}
+#kidimg {
+  position: absolute;
+  right: 20px;
+  background-color: black !important;
+}
+.kidimg22 {
+  max-height: 100px;
+  max-width: 100px;
+  width: 25px;
+  height: 25px;
+}
+.bi {
+  position: absolute;
+  right: 90px;
+}
+.bi2 {
+  position: absolute;
+  left: 1100px;
+}
+
+ 
+
+
+ul{
+     list-style-type: none;
+ }
+
+
+ ion-icon {
+     opacity: 0.5;
+ }
+
+
+
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+
+    <div>
+        <nav style="height: auto" class="navbar navbar-dark">
+          <img src="./netflix-ui-start/assets/netflix_logo.png" alt="photo" />
+          <div class="mx-2">
+            <span class="mx-2">Home</span>
+            <span class="mx-2">Tv Shows</span>
+            <span class="mx-2">Movies</span>
+            <span class="mx-2">Recentley Added</span>
+    <span class="mx-2">My List</span>
+          </div>
+          <span class="kids">Kids</span>
+          <i class="bi bi-bell" style="font-size: 24px"></i>
+            <i class="bi2 bi-search" style="font-size: 24px"></i>
+          <div id="kidimg" class="btn-group">
+            <button
+              type="button"
+              class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img class="kidimg22" src="./netflix-ui-start/assets/kids_icon.png" alt="kids" />
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            </div>
+          </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
 
 
 
@@ -18,6 +119,208 @@
 
 
     
+   <!--GRID CONTAINING GENRE AND OTHER ELEMENTS-->
+        <div class="container-fluid px-md-5 mb-4 mt-4">
+
+            <div class="row mx-0">
+            <h4 class="title-prime py-md-3">TV Shows</h4>
+            <div class="col">
+            <div class="dropdown py-md-3">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Genres
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Thriller</a>
+                  <a class="dropdown-item" href="#">SciFi</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-end py-md-3">
+                <ion-icon name="list-outline" style="font-size: 20px; border: 1px solid white; opacity: 0.5;"></ion-icon>
+                <ion-icon name="grid-outline" style="font-size: 20px; border: 1px solid white; opacity: 0.5;"></ion-icon>
+            </div>
+
+
+
+        </div>
+         
+        </div>
+   
+    
+
+
+
+    <!--MAIN GRID-->
+        <div class="container-fluid px-md-5 mb-4">
+            <div class="mt-4 mb-2">
+                <h4 class="title-prime">Trending</h4>
+            </div>
+        <div class="row mx-n1">
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media0.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media1.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media2.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media2.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media3.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media4.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+        </div>
+
+
+
+        <div class="mt-4 mb-2">
+            <h4 class="title-prime">Watch It Again</h4>
+        </div>
+        <div class="row mx-n1">
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media5.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media6.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media7.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media8.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media9.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media19.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+        </div>
+    
+
+
+        <div class="mt-4 mb-2">
+            <h4 class="title-prime">New Releases</h4>
+        </div>
+        <div class="row mx-n1">
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media11.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media12.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media13.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media14.webp" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media15.jpg" alt="image movie" class="img-fluid w-100 rounded">
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 px-1 mb-2 mb-md-0">
+                <img src="./netflix-ui-start/assets/media/media16.webp" alt="image movie" class="img-fluid w-100 rounded">
+               
+            </div>
+        </div>
+
+</div>
+
+<!--FOOTER-->
+<footer class="footer mt-4">
+        
+    <div class="container-fluid px-md-5 mb-4">
+        <div class="row px-md-4">
+            <div class="col-3">
+            <ion-icon name="logo-facebook" size="large"></ion-icon>
+            <ion-icon name="logo-instagram" size="large"></ion-icon>
+            <ion-icon name="logo-twitter" size="large"></ion-icon>
+            <ion-icon name="logo-youtube" size="large"></ion-icon>
+        </div>
+
+        </div>
+
+     <div class="row">
+         <div class="col-3">
+            <ul class="list1">
+                <li>Audio and subtitles</li>
+                <li>Media Center</li>
+                <li>Privacy</li>
+                <li>Contact us</li>
+                <br>
+                <button type="button" class="btn btn-outline-light px-md-4">Service Code</button>
+            </ul>
+           
+         </div>
+         <div class="col-3">
+            <ul>
+                <li>Audio Description</li>
+                <li>Investor Relations</li>
+                <li>Legal Notices</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul>
+                <li>Help Center</li>
+                <li>Jobs</li>
+                <li>Cookie Preferences</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul>
+                <li>Gift Cards</li>
+                <li>Terms of Use</li>
+                <li>Corporate Information</li>
+            </ul>
+        </div>
+
+     </div>
+
+
+
+
+    </div>
+    <div class="container-fluid px-md-5 mb-4">
+        <p style="padding-left: 40px">Netflix.Inc || All rights reserved</p>
+        </div>
+       
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
