@@ -9,71 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <linkrel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
   />
-    
-    <title>Hello, world!</title>
-
-
-
-    <style>
-
-body {
-  background-color: black;
-  color: white;
-}
-.navbar {
-  position: relative;
-  color: white;
-  justify-content: flex-start !important;
-  background-color: black;
-  height: 20px;
-}
-img {
-  max-width: 100px;
-  max-height: 100px;
-}
-.position {
-  position: absolute;
-  right: 140px;
-}
-.kids {
-  position: absolute;
-  right: 120px;
-}
-#kidimg {
-  position: absolute;
-  right: 20px;
-  background-color: black !important;
-}
-.kidimg22 {
-  max-height: 100px;
-  max-width: 100px;
-  width: 25px;
-  height: 25px;
-}
-.bi {
-  position: absolute;
-  right: 90px;
-}
-.bi2 {
-  position: absolute;
-  left: 1100px;
-}
-
- 
-
-
-ul{
-     list-style-type: none;
- }
-
-
- ion-icon {
-     opacity: 0.5;
- }
-
-
-
-    </style>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  <link rel="stylesheet" href="homepage.css">
+  
+  <title>Netflix</title>
   </head>
   <body>
 
@@ -90,34 +32,30 @@ ul{
           </div>
           <span class="kids">Kids</span>
           <i class="bi bi-bell" style="font-size: 24px"></i>
-            <i class="bi2 bi-search" style="font-size: 24px"></i>
+          <i class="bi2 bi-search" style="font-size: 24px"></i>
           <div id="kidimg" class="btn-group">
             <button
               type="button"
               class="btn btn-danger dropdown-toggle dropdown-toggle-split"
               data-toggle="dropdown"
               aria-expanded="false"
-            >
-              <img class="kidimg22" src="./netflix-ui-start/assets/kids_icon.png" alt="kids" />
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            </div>
+              >
+    <img class="kidimg22" src="./netflix-ui-start/assets/kids_icon.png" alt="kids" />
+    <span class="sr-only">Toggle Dropdown</span>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="...">Home</a></li> <!-- MISSING HOOK TO LINK PAGES -->
+        <li><a class="dropdown-item" href="/M2/D5/NetFlix Project/profile.html">Your Profile</a></li>
+        <li><a class="dropdown-item" href="...">Settings</a></li> <!-- MISSING HOOK TO LINK PAGES -->
+        <li><hr class="dropdown-divider"></li>
+      </ul>
+</li>
+
+  </button>
+  </div>
           </div>
+
         </nav>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     
    <!--GRID CONTAINING GENRE AND OTHER ELEMENTS-->
         <div class="container-fluid px-md-5 mb-4 mt-4">
@@ -147,10 +85,6 @@ ul{
         </div>
          
         </div>
-   
-    
-
-
 
     <!--MAIN GRID-->
         <div class="container-fluid px-md-5 mb-4">
@@ -183,8 +117,6 @@ ul{
                 
             </div>
         </div>
-
-
 
         <div class="mt-4 mb-2">
             <h4 class="title-prime">Watch It Again</h4>
@@ -299,9 +231,6 @@ ul{
         </div>
 
      </div>
-
-
-
 
     </div>
     <div class="container-fluid px-md-5 mb-4">

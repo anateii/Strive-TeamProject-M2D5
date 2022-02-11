@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: white;
+}
+.navbar {
+  position: relative;
+  color: white;
+  justify-content: flex-start !important;
+  background-color: black;
+  height: 20px;
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.position {
+  position: absolute;
+  right: 140px;
+}
+.kids {
+  position: absolute;
+  right: 120px;
+}
+#kidimg {
+  position: absolute;
+  right: 30px;
+  /* background-color: black !important; */
+}
+.kidimg22 {
+  max-height: 100px;
+  max-width: 100px;
+  width: 25px;
+  height: 25px;
+}
+.bi {
+  position: absolute;
+  right: 90px;
+}
+.bi2 {
+  position: absolute;
+  left: 1080px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ion-icon {
+  opacity: 0.5;
+}
