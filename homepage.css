@@ -23,7 +23,7 @@ img {
 }
 #kidimg {
   position: absolute;
-  right: 30px;
+  right: 20px;
   /* background-color: black !important; */
 }
 .kidimg22 {
@@ -36,9 +36,10 @@ img {
   position: absolute;
   right: 90px;
 }
+
 .bi2 {
   position: absolute;
-  left: 1080px;
+  left: 1040px;
 }
 
 ul {
