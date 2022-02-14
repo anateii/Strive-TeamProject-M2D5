@@ -1,7 +1,7 @@
-::after , ::before {
+::after,
+::before {
   box-sizing: border-box;
 }
-
 
 body {
   background-color: black;
@@ -11,34 +11,34 @@ body {
 .navbar {
   position: relative;
   color: white;
-  justify-content: flex-start !important;
+  /* justify-content: flex-start !important; */
   background-color: black;
-  height: 20px;
+  /* height: 20px; */
 }
 img {
   max-width: 100px;
   max-height: 100px;
 }
-.position {
+/* .position {
   position: absolute;
   right: 140px;
 }
 .kids {
   position: absolute;
   right: 120px;
-}
-#kidimg {
-  position: absolute;
-  right: 20px;
-  /* background-color: black !important; */
-}
+} */
+/* #kidimg { */
+/* position: absolute; */
+/* right: 20px; */
+/* background-color: black !important; */
+/* } */
 .kidimg22 {
   max-height: 100px;
   max-width: 100px;
   width: 25px;
   height: 25px;
 }
-.bi {
+/* .bi {
   position: absolute;
   right: 90px;
 }
@@ -46,7 +46,7 @@ img {
 .bi2 {
   position: absolute;
   left: 1040px;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -57,7 +57,17 @@ ion-icon {
 }
 
 .ionFirst {
-  font-size: 25px; 
-  border: 1px solid white; 
+  font-size: 20px;
+  border: 1px solid white;
   opacity: 0.5;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+
+.dropdown .btn {
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 2px;
 }
