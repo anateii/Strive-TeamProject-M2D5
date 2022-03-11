@@ -62,7 +62,42 @@
     </div>
 
 
-    
+    <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mx-auto mt-3">
+            <h1 class="text-center">Backoffice</h1>
+  
+            <form class="d-flex flex-column" onsubmit="handleSubmit(event)">
+               <label>Movie Name</label>
+              <input class="form-control" type="text" placeholder="Name" />
+              <label>Description</label>
+              <input class="form-control" type="text" placeholder="Description" />
+              <label>Movie Category</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Scifi</option>
+                <option>Thriller</option>
+                <option>Action</option>
+              </select>
+              <label>Image Url</label>
+              <input class="form-control" type="url" placeholder="Image Url"/>
+              <button
+                type="submit"
+                class="firstButton btn btn-dark btn-block mt-3 mx-auto"
+              >
+                Add Movie
+              </button>
+              <button
+                type="button"
+                onclick="handleDelete()"
+                class="btn btn-danger btn-block mt-3"
+              >
+                Delete Movie
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+  
 
 
 <!--FOOTER-->
