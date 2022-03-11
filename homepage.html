@@ -64,7 +64,7 @@
 
     
    <!--GRID CONTAINING GENRE AND OTHER ELEMENTS-->
-        <div class="container-fluid px-md-5 mb-4 mt-4">
+      <!--- <div class="container-fluid px-md-5 mb-4 mt-4">
 
             <div class="row mx-0">
             <h4 class="title-prime py-md-3">TV Shows</h4>
@@ -89,13 +89,13 @@
         </div>
        </div>
          
-        </div>
+        </div>-->
   
 
 <!--2ND MAIN GRID - New Version, Responsive-->
 
 
-<div class="container-fluid px-md-5 mb-4">
+<!--<div class="container-fluid px-md-5 mb-4">
     <div class="mt-4 mb-2">
         <h4 class="title-prime">Trending</h4>
     </div>
@@ -174,7 +174,39 @@
         </div>
         </div>
 
+</div>-->
+
+
+<div class="container-fluid px-md-5 mb-4">
+    <div class="mt-4 mb-2">
+        <h4 class="title-prime">SciFi Movies</h4>
+    </div>
+
+    <div class="row mx-n1" id="SciFi">
+        <!--<div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src="./netflix-ui-start/assets/media/media0.webp" alt="image movie" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src="./netflix-ui-start/assets/media/media1.jpg" alt="image movie" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src="./netflix-ui-start/assets/media/media10.jpg" alt="image movie" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src="./netflix-ui-start/assets/media/media12.jpg" alt="image movie" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src="./netflix-ui-start/assets/media/media20.jpg" alt="image movie" class="img-fluid w-100 rounded">
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src="./netflix-ui-start/assets/media/media22.webp" alt="image movie" class="img-fluid w-100 rounded">
+        </div>-->
+    </div>
 </div>
+
+
+
+
 
 <!--FOOTER-->
 <footer>
@@ -228,6 +260,42 @@
     </div>
 </footer>
 
+
+<script>
+
+const endpoint = "https://striveschool-api.herokuapp.com/api/movie/"
+
+const scifi = document.getElementById("SciFi")
+
+// An async function returns a promise
+async function fetchEvents() {
+    const response = await fetch(endpoint, {headers: {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjI4YWQ0ODRlYTdiMTAwMTVkMDY3YTQiLCJpYXQiOjE2NDY5OTQ5NzEsImV4cCI6MTY0ODIwNDU3MX0.ObKq-dfRnTc3awV_HpNotCsX6Yk1aL9mfx-KCZN35NY"}
+})
+    const data = await response.json()
+
+  
+    scifi.innerHTML = data.map(event => `
+    
+    <div class="col-6 col-sm-4 col-md-2 px-1 mb-2 mb-md-0">
+            <img src=${event.imageUrl} alt="image movie" class="img-fluid w-100 rounded">
+            <a href='/backoffice.html?id=${event._id}'>${event.name}</a>
+            <p class="card-text">${event.description}</p>
+            <p class="card-text">${event.category}</p>
+            
+        </div>
+        
+    `).join('')
+}
+
+
+
+window.onload = fetchEvents
+
+
+
+
+
+</script>
 
 
 
