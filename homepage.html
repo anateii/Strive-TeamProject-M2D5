@@ -33,6 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Movies </a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Recently Added </a></li>
                     <li class="nav-item"><a class="nav-link" href="#">My List </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/backoffice.html">Backoffice </a></li>
                 </ul>
                 <i class="bi2 bi-search mr-2" style="font-size: 24px"></i>
                 <span class="kids text-muted mr-2">KIDS</span>
@@ -229,6 +230,31 @@
 
 
 
+
+
+<script>
+       const endpoint = "https://striveschool-api.herokuapp.com/api/movies/"
+        const listGroup = document.getElementById("events-list")
+
+        // An async function returns a promise
+        async function fetchEvents() {
+            const response = await fetch(endpoint, {
+headers: {
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjI4YWQ0ODRlYTdiMTAwMTVkMDY3YTQiLCJpYXQiOjE2NDc5OTE5MDYsImV4cCI6MTY0OTIwMTUwNn0.SuTn1Wodm9jBSc759yMnFzAsIcKwYSsLy1_R_n_zECY"
+}
+})
+            const data = await response.json()
+
+            listGroup.innerHTML = data.map(event => `
+                <li class="list-group-item d-flex">
+                    ${event.name}
+                    <span class="badge bg-dark ms-auto">${event.price}</span>
+                </li>
+            `).join('')
+        }
+
+        window.onload = fetchEvents
+</script>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
